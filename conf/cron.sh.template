@@ -1,0 +1,5 @@
+#!/bin/bash
+cd %(base_path)s
+source bin/activate
+export ENVIRON_TYPE='%(environ_type)s'
+proj/%(django_name)s/manage.py sc_cronjobs

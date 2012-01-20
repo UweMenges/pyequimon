@@ -1,0 +1,15 @@
+%(base_path)s/log/*.log {
+	weekly
+	missingok
+	rotate 26
+	compress
+	delaycompress
+	notifempty
+	create 640 root www-data
+	sharedscripts
+	postrotate
+		if [ -f /var/run/apache2.pid ]; then
+			/etc/init.d/apache2 reload > /dev/null
+		fi
+	endscript
+}

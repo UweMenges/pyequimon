@@ -1,0 +1,5 @@
+# cron template for django projects
+# adapt to your needs and then link it into cron.d
+# default is to run this every 5 minutes, since the jobs will only
+# be executed as defined in their cron class anyway
+*/5 * * * * www-data %(base_path)s/bin/cron.sh > /dev/null

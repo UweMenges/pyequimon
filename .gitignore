@@ -1,0 +1,10 @@
+syntax:glob
+*.pyc
+*.pyo
+.tmp*~
+lib/*
+bin/*
+build/*
+include/*
+src/*
+.hg*

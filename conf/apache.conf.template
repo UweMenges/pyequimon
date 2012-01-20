@@ -1,0 +1,30 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@%(server_name)s
+    ServerName %(server_name)s
+    ServerAlias %(server_alias)s
+    ErrorLog %(base_path)s/log/error.log
+    CustomLog %(base_path)s/log/access.log combined
+
+    # media serving (order is important here!)
+    Alias /media %(base_path)s/media
+    Alias /adtrk %(base_path)s/media/adverts
+    
+    # admin-media is a link inside of /media
+    Alias /admin-media %(base_path)s/media/admin-media
+    
+    <Directory %(base_path)s/media>
+      order allow,deny
+      allow from all
+    </Directory>
+ 
+    # daemon mode is not stable, freezes server
+    #WSGIDaemonProcess %(server_name)s user=www-data group=www-data threads=50    
+    #WSGIProcessGroup %(server_name)s
+
+    WSGIScriptAlias / %(wsgi_path)s
+ 
+    <Location />
+      Options FollowSymLinks
+	  Allow from all
+    </Location>
+</VirtualHost>

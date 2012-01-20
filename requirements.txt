@@ -1,0 +1,20 @@
+
+# dependencies for secept djangotools 
+Django>=1.2
+#html5lib
+#django-extensions
+
+# secept-djangotools
+#-e hg+ssh://ugb.cv.gd//srv/hg/repos/secept-djangotools/#egg=secept-djangotools
+# deployment utils
+#-e hg+ssh://ugb.cv.gd//srv/hg/repos/django-deployment/#egg=django-deployment
+
+# further requirements
+# comment out to use
+
+# django-contact-form
+#-e hg+http://bitbucket.org/ubernostrum/django-contact-form/#egg=ContactForm
+
+# django-debug-toolbar
+#-e git://github.com/dcramer/django-debug-toolbar.git#egg=debug-toolbar
+
