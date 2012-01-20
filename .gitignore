@@ -7,4 +7,7 @@ bin/*
 build/*
 include/*
 src/*
+media/*
+var/*
 .hg*
+.git*
