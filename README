@@ -1,0 +1,24 @@
+pyequimon - A web-based equipment database
+
+A rework of phpEquiMon [http://sourceforge.net/projects/phpequimon/]
+
+NOTE: The following description is from phpEquiMon and describes the goal.
+      The features currently provided will be listed as they are implemented.
+
+DESCRIPTION
+
+A lightweight webapp designed for system administrators to track and
+monitor IP-based equipment. It's basically a dynamic inventory list, but
+has many additional features. It's suited well for anything from SOHO to
+whole data centers. 
+
+FEATURES
+
+  - Multiuser support with access control
+  - Can manage PXE/DHCP server(s)
+  - Simple (ping) monitoring with e-mail alerting
+  - Smart display of virtual hosts (group to their physical host)
+  - Automatically generates rack allocation map
+  - Manage auto-deployment via PXE (since v0.2, which is not yet released)
+  - Automatically grab PXE installation kernel+initrd from Installation DVDs (SUSE/Red Hat only atm)
+
